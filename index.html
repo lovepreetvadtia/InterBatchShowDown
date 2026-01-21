@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketcha- Design Tool</title>
+     <link href="./output.css" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    <div class="canvas w-screen h-screen bg-[#001321]">
+      <!-- NavBar -->
+      <div class="navbar h-14 w-screen bg-[#1E1E1E] flex justify-between items-center px-10 border-b border-[#68686888]">
+        
+        <!-- Left -->
+        <div class="left">
+          <h2 class="text-white font-bold text-xl">Sketcha</h2>
+        </div>
+        
+        <!-- Center -->
+        <div class="center h-10 w-65 bg-[#2A2A2A] rounded-md flex items-center justify-between px-5 py-1">
+          <p><i class="ri-rectangle-fill text-2xl text-[#ffffff]"></i></p>
+          <p><i class="ri-navigation-fill text-white text-2xl"></i></p>
+          <p><i class="ri-t-box-line text-white text-2xl"></i></p>
+          <p><i class="ri-delete-bin-7-fill text-2xl text-[#F87171]"></i></p>
+        </div>
+        
+        <!-- Right -->
+        <div class="right">
+          <div class="export text-white font-bold bg-[#2B8CEE] px-5 py-2 rounded-[10px] flex gap-2">
+            <p>Export</p>
+            <i class="ri-share-forward-fill"></i>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Main Section -->
+      <div class="w-screen flex">
+
+        <!-- Layers Section -->
+        <div class="layer w-1/6  bg-[#1E1E1E] text-[#92ADC9] border-r border-b border-[#68686888]">
+          <div class="LayerSection flex justify-between px-4 py-2 border-b border-[#68686888]">
+            <p class="font-semibold">LAYERS</p>
+            <i class="ri-add-line"></i>
+          </div>
+          <div class="AllLayers ">
+            <div class="layer1 flex justify-start items-center px-2 gap-2 font-semibold py-2">
+            <i class="ri-rectangle-fill text-2xl text-[#686868]"></i><p>Reactangle 1</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Playground -->
+        <div class="playground w-4/6 ">ndnd</div>
+        
+        <!-- Properties -->
+        <div class="border-l border-b border-[#68686888] properties w-1/6 bg-[#1E1E1E] text-[#92ADC9] font-semibold h-10 flex items-center justify-center">
+          <div class="propertiesSection">
+            <p>PROPERTIES</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <script src="script.js"></script>
+</body>
+</html>
