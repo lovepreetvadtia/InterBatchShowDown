@@ -1,1 +1,8 @@
+.canvas-grid {
+  background-color: #151D26;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.212) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
 @import "tailwindcss";

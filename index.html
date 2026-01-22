@@ -9,27 +9,28 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
     rel="stylesheet"/>
 </head>
-<body>
+<body class="overflow-hidden h-screen">
     <div class="canvas w-screen h-screen bg-[#001321]">
       <!-- NavBar -->
-      <div class="navbar h-14 w-screen bg-[#1E1E1E] flex justify-between items-center px-10 border-b border-[#68686888]">
+      <div class="navbar h-14 w-screen bg-[#1E1E1E] flex justify-between items-center px-10 border-b border-[#68686865]">
         
         <!-- Left -->
-        <div class="left">
+        <div class="left flex gap-2">
+          <img class="h-7 w-7" src="./Sketcha Logo.jpg" alt="">
           <h2 class="text-white font-bold text-xl">Sketcha</h2>
         </div>
         
         <!-- Center -->
-        <div class="center h-10 w-65 bg-[#2A2A2A] rounded-md flex items-center justify-between px-5 py-1">
-          <p><i class="ri-rectangle-fill text-2xl text-[#ffffff]"></i></p>
-          <p><i class="ri-navigation-fill text-white text-2xl"></i></p>
-          <p><i class="ri-t-box-line text-white text-2xl"></i></p>
-          <p><i class="ri-delete-bin-7-fill text-2xl text-[#F87171]"></i></p>
+        <div class="center h-9 w-60 bg-[#2A2A2A] rounded-md flex items-center justify-between px-5 py-1">
+          <p title="Reactangle" class="px-2 py-2 hover:bg-[#5f656d28]" ><i class="ri-rectangle-fill text-xl text-[#ffffff]"></i></p>
+          <p title="Selection"><i class="ri-navigation-fill text-white text-xl"></i></p>
+          <p title="Text Box"><i class="ri-t-box-line text-white text-xl"></i></p>
+          <p title="Delete"><i class="ri-delete-bin-7-fill text-xl text-[#F87171]"></i></p>
         </div>
         
         <!-- Right -->
         <div class="right">
-          <div class="export text-white font-bold bg-[#2B8CEE] px-5 py-2 rounded-[10px] flex gap-2">
+          <div class="font-semibold export text-white bg-[#2B8CEE] px-3 py-1 rounded-md flex gap-2">
             <p>Export</p>
             <i class="ri-share-forward-fill"></i>
           </div>
@@ -37,11 +38,11 @@
       </div>
       
       <!-- Main Section -->
-      <div class="w-screen flex">
+      <div class="w-screen flex h-screen">
 
         <!-- Layers Section -->
-        <div class="layer w-1/6  bg-[#1E1E1E] text-[#92ADC9] border-r border-b border-[#68686888]">
-          <div class="LayerSection flex justify-between px-4 py-2 border-b border-[#68686888]">
+        <div class="layer w-1/6  h-screen bg-[#1E1E1E] text-[#92ADC9] border-r border-b border-[#68686865]">
+          <div class="LayerSection flex justify-between px-4 py-2 border-b border-[#68686865]">
             <p class="font-semibold">LAYERS</p>
             <i class="ri-add-line"></i>
           </div>
@@ -53,14 +54,20 @@
         </div>
 
         <!-- Playground -->
-        <div class="playground w-4/6 ">ndnd</div>
+        <div class="playground w-full h-full canvas-grid">
+        
+        </div>
         
         <!-- Properties -->
-        <div class="border-l border-b border-[#68686888] properties w-1/6 bg-[#1E1E1E] text-[#92ADC9] font-semibold h-10 flex items-center justify-center">
-          <div class="propertiesSection">
+        <div class=" border-[#68686865] border-l properties w-1/6 bg-[#1E1E1E] text-[#92ADC9]  flex flex-col items-center justify-center">
+          <div class="propertiesSection flex items-center border-b border-[#68686865] justify-center font-semibold h-10 w-full">
             <p>PROPERTIES</p>
           </div>
+          <div class="mainProps h-screen w-full">
+
+          </div>
         </div>
+
       </div>
     </div>
       
